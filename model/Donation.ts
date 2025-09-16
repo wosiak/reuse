@@ -43,8 +43,8 @@ export default class Donation {
         return this.date;
     }
 
-    public assignToOrganization(org: Organization): void {
-        this.organization = org;
+    public assignToOrganization(organization: Organization): void {
+        this.organization = organization;
         this.status = DonationStatus.ACCEPTED;
     }
 

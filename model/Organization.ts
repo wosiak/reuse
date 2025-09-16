@@ -5,8 +5,9 @@ import Address from "./Address";
 export default class Organization extends Account {
     private category!: Category;
 
-    constructor(name: string, email: string, password: string, address: Address) {
+    constructor(name: string, email: string, password: string, address: Address, category: Category) {
         super(name, email, password, address);
+        this.category = category; 
     }
 
     public setCategory(category: Category): void {
