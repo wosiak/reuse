@@ -2,8 +2,9 @@ import Organization from "../model/Organization";
 import Address from "../model/Address";
 import Category from "../model/Category";
 import Database from "../db/Database";
+import { IOrganizationService } from './../interface/IOrganizationService';
 
-export default class OrganizationService {
+export default class OrganizationService implements IOrganizationService{
   private db = Database.getInstance();
 
   public registerOrganization(name: string, email: string, password: string, address: Address, category: Category): Organization {

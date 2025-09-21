@@ -1,8 +1,9 @@
 import Donor from "../model/Donor";
 import Address from "../model/Address";
 import Database from "../db/Database";
+import { IDonorService } from './../interface/IDonorService';
 
-export default class DonorService {
+export default class DonorService implements IDonorService {
   private db = Database.getInstance();
 
   public registerDonor(name: string, email: string, password: string, address: Address): Donor {
