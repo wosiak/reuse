@@ -1,18 +1,14 @@
 import Category from "./Category";
 import Condition from "./Condition";
+import IGetInfo from "../interface/IGetInfo";
 
-export default class DonationItem {
-    private name: string;
-    private description: string;
-    private category: Category;
-    private condition: Condition;
-
-    constructor(name: string, description: string, category: Category, condition: Condition) {
-        this.name = name;
-        this.description = description;
-        this.category = category;
-        this.condition = condition;
-    }
+export default class DonationItem implements IGetInfo {
+    constructor(
+        private name: string,
+        private description: string,
+        private category: Category,
+        private condition: Condition
+    ) {}
 
     public getName(): string {
         return this.name;
@@ -36,5 +32,9 @@ export default class DonationItem {
 
     public setCondition(condition: Condition): void {
         this.condition = condition;
+    }
+
+    getInfo(): string {
+        return `Item: ${this.name}, Category: ${this.category}, Condition: ${this.condition}, Description: ${this.description}`;
     }
 }

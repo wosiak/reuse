@@ -1,15 +1,12 @@
-export default class Address {
-    private street: string;
-    private number: string;
-    private city: string;
-    private zipCode: string;
+import IGetInfo from "../interface/IGetInfo";
 
-    constructor(street: string, number: string, city: string, zipCode: string) {
-        this.street = street;
-        this.number = number;
-        this.city = city;
-        this.zipCode = zipCode;
-    }
+export default class Address implements IGetInfo {
+    constructor(
+        private street: string,
+        private number: string,
+        private city: string,
+        private zipCode: string
+    ) {}
 
     public getStreet(): string {
         return this.street;
@@ -43,7 +40,7 @@ export default class Address {
         this.zipCode = zipCode;
     }
 
-    public toString(): string {
+    getInfo(): string {
         return `${this.street}, ${this.number} - ${this.city} (${this.zipCode})`;
     }
 }

@@ -2,8 +2,9 @@ import Donor from "./Donor";
 import Organization from "./Organization";
 import DonationItem from "./DonationItem";
 import DonationStatus from "./DonationStatus";
+import IGetInfo from "../interface/IGetInfo";
 
-export default class Donation {
+export default class Donation implements IGetInfo {
     private id: string;
     private donor: Donor;
     private organization?: Organization; // pode ser undefined
@@ -54,5 +55,10 @@ export default class Donation {
 
     public getAssignedOrganization(): Organization | undefined {
         return this.organization;
+    }
+
+    getInfo(): string {
+        const orgInfo = this.organization ? this.organization.getInfo() : "Not assigned";
+        return `Donation ${this.id} by ${this.donor.getInfo()} to ${orgInfo}, Items: ${this.items.length}, Status: ${this.status}, Date: ${this.date.toLocaleDateString()}`;
     }
 }
