@@ -1,9 +1,8 @@
 import Donor from "../model/Donor";
 import Address from "../model/Address";
 import Database from "../db/Database";
-import { IDonorService } from './../interface/IDonorService';
 
-export default class DonorService implements IDonorService {
+export default class DonorService {
   private db = Database.getInstance();
 
   public registerDonor(name: string, email: string, password: string, address: Address): Donor {
@@ -14,8 +13,7 @@ export default class DonorService implements IDonorService {
 
   public login(email: string, password: string): Donor | undefined {
     const donors = this.db.getDonors();
-    const found = donors.find(d => d.getEmail() === email && d.getPassword() === password);
-    return found;
+    return donors.find(d => d["email"] === email && d["password"] === password);
   }
 
   public listDonors(): Donor[] {

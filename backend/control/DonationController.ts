@@ -1,12 +1,12 @@
 import Donation from "../model/Donation";
 import Donor from "../model/Donor";
 import DonationItem from "../model/DonationItem";
-import { IDonationService } from './../interface/IDonationService';
+import DonationService from "../service/DonationService";
 
 export default class DonationController {
-    constructor (private donationService: IDonationService) {}
+    constructor (private donationService: DonationService) {}
 
-    public createDonation(donor: Donor, items: DonationItem[]): Donation{
+    public createDonation(donor: Donor, items: DonationItem[]): Donation {
         return this.donationService.createDonation(donor, items);
     }
 
