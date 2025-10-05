@@ -1,11 +1,11 @@
-# ♻️ ReUse – Plataforma de Doações
+# ReUse – Plataforma de Doações
 
 O **ReUse** é um sistema que conecta **pessoas dispostas a doar** com **organizações que precisam receber**.  
 Desenvolvido como projeto acadêmico na **UTFPR**, ele une **backend em TypeScript** e **frontend em Angular** (em desenvolvimento).
 
 ---
 
-## 💡 Propósito
+## Propósito
 
 ### Para quem é?
 - **Doadores**: indivíduos que têm roupas, brinquedos, eletrônicos, alimentos ou outros itens que não usam mais.  
@@ -19,7 +19,7 @@ Desenvolvido como projeto acadêmico na **UTFPR**, ele une **backend em TypeScri
 
 ---
 
-## 🏗️ Estrutura do Repositório
+## Estrutura do Repositório
 
 reuse/
 ├─ README.md # Este arquivo – visão geral do projeto
@@ -34,7 +34,7 @@ reuse/
 
 ---
 
-## ⚙️ Tecnologias
+## Tecnologias
 
 - **Node.js + TypeScript** – API e lógica de negócios.  
 - **Angular** – interface web (futuro).  
@@ -43,7 +43,7 @@ reuse/
 
 ---
 
-## 🚀 Como Rodar
+## Como Rodar
 
 ### Backend
 Siga as instruções do [README do backend](backend/README.md) para instalar dependências e executar a API.
@@ -53,12 +53,12 @@ Será detalhado no [README do frontend](frontend/README.md) assim que o desenvol
 
 ---
 
-## 🔮 Próximos Passos
-- Criar o **frontend em Angular**, consumindo a API existente.  
+## Próximos Passos
+- Criar o frontend em Angular, consumindo a API existente.  
 - Implementar as telas web para doadores e organizações.  
 - Preparar deploy completo (API + Web).
 
 ---
 
-## 👥 Autor
+## Autor
 Projeto desenvolvido por **Eduardo Wosiak** como parte da disciplinas de POO e Desenvolvimento de Aplicações Front-End da **Universidade Tecnológica Federal do Paraná (UTFPR)**.
