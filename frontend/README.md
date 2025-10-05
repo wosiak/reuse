@@ -43,7 +43,7 @@ Trata-se de uma aplicação web que conecta **doadores** a **organizações/ONGs
 | Terciária   | `#E28A21`   |
 
 ### Tipografia
-- Fonte utilizada: Montserrat
+- Fonte utilizada: Poppins e Inter
 
 ### Framework CSS
 - Angular Material
