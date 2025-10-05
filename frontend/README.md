@@ -1,31 +1,54 @@
 # Reuse
 
-## Autores
+<p align="center">
+  <img src="assets/logo-reuse.png" alt="Logo Reuse" width="200"/>
+</p>
+
+---
+
+## 👤 Autores
 - Eduardo Wosiak  
 - Hellen Bufrem  
 
-## Descrição
+---
+
+## 💡 Descrição
+
 O **Reuse** é um projeto acadêmico desenvolvido na disciplina de **Desenvolvimento de Aplicações Front-End** da UTFPR.  
 Trata-se de uma aplicação web que conecta **doadores** a **organizações/ONGs/empresas**, permitindo que itens como roupas, brinquedos, eletrônicos e alimentos sejam doados de forma prática e organizada.  
 
-O sistema busca resolver os seguintes problemas:  
+**Problemas que buscamos resolver:**
 - Facilitar o encontro entre quem deseja doar e quem precisa receber.  
 - Garantir compatibilidade entre doações e categorias aceitas pelas organizações.  
 - Fornecer transparência ao usuário, que pode acompanhar o status das doações (pendente, aceito, concluído).  
 
 ---
 
-## Prototipação
-[Inserir links para os protótipos ou anexar imagens quando disponíveis]
+## 📱 Prototipação
+- 🚀 [Protótipo Navegável (Mobile)](https://www.figma.com/proto/UZN16vg9oAQePBbImLq4Yr/ReUse-%7C-Mobile?node-id=1-1984&p=f&t=BnlGDkJDnfuw9qEu-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1984&show-proto-sidebar=1)
 
 ---
 
-## Design System
-[Descrição do design system utilizado, cores, tipografia, componentes principais]
+## 🎨 Design System
+- 🎨 [Design System no Figma](https://www.figma.com/design/UZN16vg9oAQePBbImLq4Yr/ReUse-%7C-Mobile?node-id=3-698)
+
+### 🎨 Paleta de Cores
+
+| Tipo        | Cor (Hex)   |
+|-------------|-------------|
+| Primária    | `#1D61E7`   |
+| Secundária  | `#4894FE`   |
+| Terciária   | `#E28A21`   |
+
+### 🔤 Tipografia
+- **Fonte utilizada**: Montserrat
+
+### 🧩 Framework CSS
+- Angular Material
 
 ---
 
-## Tecnologias
+## 💻 Tecnologias
 - **Framework CSS:** Angular  
 - **Linguagem:** TypeScript  
 - **Estrutura:** HTML5 / CSS3  
@@ -33,22 +56,22 @@ O sistema busca resolver os seguintes problemas:
 
 ---
 
-## Dependências
+## 📦 Dependências
 Atualmente não possui dependências externas adicionais.  
 
 ---
 
-## Instruções de execução
+## ⚙️ Instruções de execução
 Ainda não definido.  
 
 ---
 
-## Link para o site em produção
-Não possui ainda.  
+## 🌐 Link para o site em produção
+Ainda não disponível.  
 
 ---
 
-## Checklist de funcionalidades
+## ✅ Checklist de funcionalidades
 - [ ] Cadastro de doadores  
 - [ ] Cadastro de organizações  
 - [ ] Registro de doações  
@@ -62,12 +85,11 @@ Não possui ainda.
 
 ---
 
-## Telas da aplicação
-[Inserir imagens das telas quando disponíveis]  
+## 🖼️ Telas da aplicação
 
 ---
 
-## Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
+## 🎯 Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 ### RA1 - Prototipar e projetar interfaces gráficas de usuário  
 - [ ] **ID1:** Desenvolver protótipos considerando diretrizes de usabilidade  
@@ -112,5 +134,6 @@ Não possui ainda.
 
 ---
 
-## Status atual
+## 📌 Status atual
 O projeto encontra-se em desenvolvimento inicial, com foco na estruturação da aplicação frontend e prototipação das interfaces.
+
