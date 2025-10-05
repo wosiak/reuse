@@ -4,7 +4,7 @@ API e aplicação em **TypeScript** com **Programação Orientada a Objetos (POO
 
 ---
 
-## 📚 Visão Geral
+## Visão Geral
 
 O ReUse conecta pessoas que querem doar itens (roupas, brinquedos, eletrônicos, alimentos etc.) com organizações (ONGs ou empresas) que podem recebê-los.
 
@@ -25,7 +25,7 @@ O ReUse conecta pessoas que querem doar itens (roupas, brinquedos, eletrônicos,
 
 ---
 
-## 🧠 Conceitos de POO Utilizados
+## Conceitos de POO Utilizados
 - **Herança**: `Donor` e `Organization` herdam de `Account`.  
 - **Classe Abstrata**: `Account` não pode ser instanciada diretamente.  
 - **Enum**: `Category`, `Condition`, `DonationStatus`.  
@@ -33,4 +33,3 @@ O ReUse conecta pessoas que querem doar itens (roupas, brinquedos, eletrônicos,
 - **Interfaces**: garantem contratos para os serviços (`I*Service`).  
 - **Composição**: `Account` contém `Address`.  
 - **Encapsulamento**: getters e setters nas entidades.
-
