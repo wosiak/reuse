@@ -50,10 +50,10 @@ export default abstract class Account {
     }
 
     public logout(): void {
-        console.log(`${this.name} foi deslogado.`);
+        console.log(`${this.name} has logged out.`);
     }
 
     public viewProfile(): void {
-        console.log(`Usuário: ${this.name}, Email: ${this.email}, Endereço: ${this.address}`);
+        console.log(`User: ${this.name}, Email: ${this.email}, Address: ${this.address}`);
     }
 }

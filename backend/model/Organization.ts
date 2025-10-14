@@ -1,15 +1,21 @@
 import Category from "./Category";
 import Address from "./Address";
+import Account from "./Account";
 import IGetInfo from "../interface/IGetInfo";
 
-export default class Organization implements IGetInfo {
+export default class Organization extends Account implements IGetInfo {
+    private category: Category;
+
     constructor(
-        private name: string,
-        private email: string,
-        private password: string,
-        private address: Address,
-        private category: Category
-    ) {}
+        name: string,
+        email: string,
+        password: string,
+        address: Address,
+        category: Category
+    ) {
+        super(name, email, password, address);
+        this.category = category;
+    }
 
     public setCategory(category: Category): void {
         this.category = category;
@@ -19,7 +25,13 @@ export default class Organization implements IGetInfo {
         return this.category;
     }
 
-    getInfo(): string {
-        return `Organization: ${this.name}, Email: ${this.email}, Category: ${this.category}, Address: ${this.address.getInfo()}`;
+    public getInfo(): string {
+        return `Organization: ${this.getName()}, Email: ${this.getEmail()}, Category: ${this.category}, Address: ${this.getAddress().getInfo()}`;
+    }
+
+    public override viewProfile(): void {
+        console.log("===== Organization =====");
+        super.viewProfile();
+        console.log(`Categoria: ${this.category}`);
     }
 }
