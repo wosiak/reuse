@@ -6,8 +6,14 @@ import Database from "../db/Database";
 export default class DonationService {
   private db = Database.getInstance();
 
-  public createDonation(donor: Donor, items: DonationItem[]): Donation {
-    const id = "1"; // temporário, depois podemos melhorar para gerar IDs únicos
+  // sobrecarga
+  public createDonation(donor: Donor, item: DonationItem): Donation;
+  public createDonation(donor: Donor, items: DonationItem[]): Donation;
+
+  public createDonation(donor: Donor, itemOrItems: DonationItem | DonationItem[]): Donation {
+    const id = String(Date.now());
+    const items = Array.isArray(itemOrItems) ? itemOrItems : [itemOrItems];
+
     const newDonation = new Donation(id, donor, items);
     this.db.addDonation(newDonation);
     return newDonation;
