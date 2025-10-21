@@ -11,12 +11,18 @@ export default class DonationService {
   public createDonation(donor: Donor, items: DonationItem[]): Donation;
 
   public createDonation(donor: Donor, itemOrItems: DonationItem | DonationItem[]): Donation {
-    const id = String(Date.now());
-    const items = Array.isArray(itemOrItems) ? itemOrItems : [itemOrItems];
+    try {
+      const id = String(Date.now());
+      const items = Array.isArray(itemOrItems) ? itemOrItems : [itemOrItems];
 
-    const newDonation = new Donation(id, donor, items);
-    this.db.addDonation(newDonation);
-    return newDonation;
+      const newDonation = new Donation(id, donor, items);
+      this.db.addDonation(newDonation);
+      return newDonation;
+
+    } catch (error) {
+      console.error("Error creating donation:", error);
+      throw error; 
+    }
   }
 
   public listDonations(): Donation[] {
