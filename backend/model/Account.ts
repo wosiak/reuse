@@ -13,6 +13,9 @@ export default abstract class Account {
         this.address = address;
     }
 
+    public abstract showProfileSummary(): void;
+    public abstract performAction(): void;
+    
     public getName(): string {
         return this.name;
     }

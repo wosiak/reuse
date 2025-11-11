@@ -5,14 +5,10 @@ import IGetInfo from "../interface/IGetInfo";
 
 export default class Organization extends Account implements IGetInfo {
     private category: Category;
+    private itemsReceived: number = 0;
 
     constructor(
-        name: string,
-        email: string,
-        password: string,
-        address: Address,
-        category: Category
-    ) {
+        name: string,email: string,password: string,address: Address,category: Category) {
         super(name, email, password, address);
         this.category = category;
     }
@@ -30,8 +26,17 @@ export default class Organization extends Account implements IGetInfo {
     }
 
     public override viewProfile(): void {
-        console.log("===== Organization =====");
+        console.log("Organization");
         super.viewProfile();
-        console.log(`Categoria: ${this.category}`);
+        console.log(`Category: ${this.category}`);
+    }
+
+    public showProfileSummary(): void {
+        console.log(`Organization: ${this.getName()} | Category: ${this.category} | Items received: ${this.itemsReceived}`);
+    }
+
+    public performAction(): void {
+        this.itemsReceived++;
+        console.log(`${this.getName()} just received a new donation! Total items: ${this.itemsReceived}`);
     }
 }
