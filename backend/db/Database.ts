@@ -36,7 +36,7 @@ export default class Database {
 
   public addDonation(donation: Donation): void {
     this.donations.push(donation);
-  }
+  } // new error. ex: se for menor que < algum valor... pensar num erro melhor! e editar o arquivo error/error.ts
 
   public getDonations(): Donation[] {
     return this.donations;

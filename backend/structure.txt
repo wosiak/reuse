@@ -1,0 +1,36 @@
+.
+├── control
+│   ├── DonationController.ts
+│   ├── DonorController.ts
+│   └── OrganizationController.ts
+├── db
+│   └── Database.ts
+├── error
+│   ├── errorSimulation.ts
+│   └── error.ts
+├── index.ts
+├── interface
+│   └── IGetInfo.ts
+├── model
+│   ├── Account.ts
+│   ├── Address.ts
+│   ├── Category.ts
+│   ├── Condition.ts
+│   ├── DonationItem.ts
+│   ├── DonationStatus.ts
+│   ├── Donation.ts
+│   ├── Donor.ts
+│   └── Organization.ts
+├── README.md
+├── service
+│   ├── DonationService.ts
+│   ├── DonorService.ts
+│   └── OrganizationService.ts
+├── structure.txt
+└── view
+    ├── DonationView.ts
+    ├── DonorView.ts
+    ├── MainView.ts
+    └── OrganizationView.ts
+
+7 directories, 26 files
