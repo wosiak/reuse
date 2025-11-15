@@ -57,6 +57,6 @@ export default abstract class Account {
     }
 
     public viewProfile(): void {
-        console.log(`User: ${this.name}, Email: ${this.email}, Address: ${this.address}`);
+        console.log(`User: ${this.name}, Email: ${this.email}, Address: ${this.address.getInfo()}`);
     }
 }

@@ -1,4 +1,3 @@
-// view/DonorView.ts
 import * as readlineSync from "readline-sync";
 import DonorController from "../control/DonorController";
 import DonorService from "../service/DonorService";
@@ -65,6 +64,7 @@ export default class DonorView {
 
     if (donor) {
       console.log(`Welcome back, ${donor.getName()}! ✅`);
+      donor.viewProfile();
     } else {
       console.log("Invalid email or password ❌");
     }

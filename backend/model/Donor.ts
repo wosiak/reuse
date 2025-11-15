@@ -10,7 +10,7 @@ export default class Donor extends Account implements IGetInfo {
     }
 
     getInfo(): string {
-        return `Donor: ${this.getName()}, Email: ${this.getEmail()}, Address: ${this.getAddress().getInfo()}`;
+    return `Donor: ${this.getName()}, Email: ${this.getEmail()}, Address: ${this.getAddress().getInfo()}`;
     }
 
     public override viewProfile(): void {
@@ -18,7 +18,6 @@ export default class Donor extends Account implements IGetInfo {
         super.viewProfile();
     }
 
-    // === IMPLEMENTAÇÃO DOS MÉTODOS ABSTRATOS ===
     public showProfileSummary(): void {
         console.log(`Donor: ${this.getName()} | Total donations: ${this.totalDonations}`);
     }

@@ -13,7 +13,11 @@ export default class DonorService {
 
   public login(email: string, password: string): Donor | undefined {
     const donors = this.db.getDonors();
-    return donors.find(d => d["email"] === email && d["password"] === password);
+    return donors.find((d: Donor) => d.getEmail() === email && d["password"] === password);
+  }
+
+  public getDonorByEmail(email: string): Donor | undefined {
+    return this.db.getDonors().find((d: Donor) => d.getEmail() === email);
   }
 
   public listDonors(): Donor[] {
